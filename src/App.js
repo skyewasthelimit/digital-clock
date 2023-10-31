@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react';
 function DigitalClock() {
   const [time, setTime] = useState(new Date());
   const [selectedColor, setSelectedColor] = useState('aqua');
-  const [textColor, setTextColor] = useState('whitesmoke');
   const [backgroundColor, setBackgroundColor] = useState('aqua');
   const [boxShadowColor, setBoxShadowColor] = useState('aqua');
   const [timeFormat, setTimeFormat] = useState('full');
@@ -22,7 +21,6 @@ function DigitalClock() {
     const selectedColor = event.target.value;
     setSelectedColor(selectedColor);
 
-    setTextColor(selectedColor);
     setBackgroundColor(selectedColor);
     setBoxShadowColor(selectedColor);
   };
